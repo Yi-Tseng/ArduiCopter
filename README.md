@@ -15,6 +15,11 @@ How to develop
  2. NetBeans IDE
  3. JDK 1.8
 
+**For Arduino, I use these libraries :**
+ 1. [ADXL345.h][1]
+ 2. [L3G.h][2]
+ 3. [Adafruit_BMP085.h][3]
+ 
 **Hardware :** 
  1. Arduino UNO (ATMega 238p)
  2. Expansion board for UNO (optional)
@@ -24,3 +29,8 @@ How to develop
 License
 ----
 MIT
+
+
+  [1]: https://github.com/jenschr/Arduino-libraries/tree/master/ADXL345
+  [2]: https://github.com/pololu/l3g-arduino
+  [3]: https://github.com/adafruit/Adafruit-BMP085-Library
