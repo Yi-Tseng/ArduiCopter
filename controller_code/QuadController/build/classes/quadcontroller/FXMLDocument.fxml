@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quadcontroller.FXMLDocumentController">
+<children><TilePane alignment="CENTER" hgap="4.0" prefHeight="627.0" prefWidth="800.0" vgap="4.0">
+<children><VBox alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="160.0" prefWidth="317.0" spacing="10.0">
+<children><Text layoutX="142.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Motor Power" /><HBox alignment="CENTER" layoutX="54.0" layoutY="192.0" prefHeight="20.0" prefWidth="331.0" spacing="10.0">
+<children><Text layoutX="43.3271484375" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Motor 1" /><ProgressBar id="pgMt01" fx:id="pgMt01" layoutX="104.0" layoutY="65.0" prefWidth="200.0" progress="0.11" /><Text id="lbMt01" fx:id="lbMt01" strokeType="OUTSIDE" strokeWidth="0.0" text="20" />
+</children></HBox><HBox alignment="CENTER" layoutX="54.0" layoutY="233.0" prefHeight="20.0" prefWidth="331.0" spacing="10.0">
+<children>
+<Text layoutX="43.3271484375" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Motor 2" />
+<ProgressBar id="pgMt02" fx:id="pgMt02" layoutX="104.0" layoutY="65.0" prefWidth="200.0" progress="0.11" />
+<Text id="lbMt02" fx:id="lbMt02" strokeType="OUTSIDE" strokeWidth="0.0" text="20" />
+</children>
+</HBox><HBox alignment="CENTER" layoutX="54.0" layoutY="357.0" prefHeight="20.0" prefWidth="331.0" spacing="10.0">
+<children>
+<Text layoutX="43.3271484375" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Motor 3" />
+<ProgressBar id="pgMt03" fx:id="pgMt03" layoutX="104.0" layoutY="65.0" prefWidth="200.0" progress="0.11" />
+<Text id="lbMt03" fx:id="lbMt03" strokeType="OUTSIDE" strokeWidth="0.0" text="20" />
+</children>
+</HBox><HBox alignment="CENTER" layoutX="54.0" layoutY="456.0" prefHeight="20.0" prefWidth="331.0" spacing="10.0">
+<children>
+<Text layoutX="43.3271484375" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Motor 4" />
+<ProgressBar id="pgMt04" fx:id="pgMt04" layoutX="104.0" layoutY="65.0" prefWidth="200.0" progress="0.11" />
+<Text id="lbMt04" fx:id="lbMt04" strokeType="OUTSIDE" strokeWidth="0.0" text="20" />
+</children>
+</HBox>
+</children></VBox><HBox alignment="CENTER" layoutX="14.0" layoutY="198.0" prefHeight="205.0" prefWidth="317.0" spacing="10.0">
+<children><VBox alignment="CENTER" layoutX="118.0" layoutY="316.0" prefHeight="160.0" prefWidth="16.0" spacing="10.0">
+<children><Text strokeType="OUTSIDE" strokeWidth="0.0" text="Motor 1" /><Slider id="slMt01" fx:id="slMt01" blockIncrement="1.0" layoutX="144.40000009536743" layoutY="311.0" max="179.0" min="20.0" orientation="VERTICAL" value="20.0" />
+</children></VBox><VBox alignment="CENTER" layoutX="204.0" layoutY="316.0" prefHeight="160.0" prefWidth="16.0" spacing="10.0">
+<children>
+<Text strokeType="OUTSIDE" strokeWidth="0.0" text="Motor 2" />
+<Slider id="slMt02" fx:id="slMt02" blockIncrement="1.0" layoutX="144.40000009536743" layoutY="311.0" max="179.0" min="20.0" orientation="VERTICAL" value="20.0" />
+</children>
+</VBox><VBox alignment="CENTER" layoutX="291.0" layoutY="316.0" prefHeight="160.0" prefWidth="16.0" spacing="10.0">
+<children>
+<Text strokeType="OUTSIDE" strokeWidth="0.0" text="Motor 3" />
+<Slider id="slMt03" fx:id="slMt03" blockIncrement="1.0" layoutX="144.40000009536743" layoutY="311.0" max="179.0" min="20.0" orientation="VERTICAL" value="20.0" />
+</children>
+</VBox><VBox alignment="CENTER" layoutX="375.0" layoutY="316.0" prefHeight="160.0" prefWidth="16.0" spacing="10.0">
+<children>
+<Text strokeType="OUTSIDE" strokeWidth="0.0" text="Motor 4" />
+<Slider id="slMt04" fx:id="slMt04" blockIncrement="1.0" layoutX="144.40000009536743" layoutY="311.0" max="179.0" min="20.0" orientation="VERTICAL" value="20.0" />
+</children>
+</VBox><VBox alignment="CENTER" layoutX="118.0" layoutY="316.0" prefHeight="160.0" prefWidth="16.0" spacing="10.0">
+<children>
+<Text strokeType="OUTSIDE" strokeWidth="0.0" text="Avg" />
+<Slider id="slMtAvg" fx:id="slMtAvg" blockIncrement="1.0" layoutX="144.40000009536743" layoutY="311.0" max="179.0" min="20.0" orientation="VERTICAL" value="20.0" />
+</children>
+</VBox>
+</children></HBox><VBox alignment="CENTER" layoutX="369.0" layoutY="14.0" prefHeight="140.0" prefWidth="317.0" spacing="10.0">
+<children>
+<Text layoutX="142.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Acceleration" />
+<HBox alignment="CENTER" layoutX="54.0" layoutY="192.0" prefHeight="20.0" prefWidth="331.0" spacing="10.0">
+<children>
+<Text layoutX="43.3271484375" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" />
+<ProgressBar id="pgAcX" fx:id="pgAcX" layoutX="104.0" layoutY="65.0" prefWidth="200.0" progress="0.0" />
+<Text strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+</children>
+</HBox>
+<HBox alignment="CENTER" layoutX="54.0" layoutY="233.0" prefHeight="20.0" prefWidth="331.0" spacing="10.0">
+<children>
+<Text layoutX="43.3271484375" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Y" />
+<ProgressBar id="pgAcY" fx:id="pgAcY" layoutX="104.0" layoutY="65.0" prefWidth="200.0" progress="0.0" />
+<Text strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+</children>
+</HBox>
+<HBox alignment="CENTER" layoutX="54.0" layoutY="357.0" prefHeight="20.0" prefWidth="331.0" spacing="10.0">
+<children>
+<Text layoutX="43.3271484375" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Z" />
+<ProgressBar id="pgAcZ" fx:id="pgAcZ" layoutX="104.0" layoutY="65.0" prefWidth="200.0" progress="0.0" />
+<Text strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+</children>
+</HBox>
+</children>
+</VBox><VBox alignment="CENTER" layoutX="369.0" layoutY="174.0" prefHeight="140.0" prefWidth="317.0" spacing="10.0">
+<children>
+<Text layoutX="142.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gyroscope" />
+<HBox alignment="CENTER" layoutX="54.0" layoutY="192.0" prefHeight="20.0" prefWidth="331.0" spacing="10.0">
+<children>
+<Text layoutX="43.3271484375" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" />
+<ProgressBar id="pgGyX" fx:id="pgGyX" layoutX="104.0" layoutY="65.0" prefWidth="200.0" progress="0.0" />
+<Text strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+</children>
+</HBox>
+<HBox alignment="CENTER" layoutX="54.0" layoutY="233.0" prefHeight="20.0" prefWidth="331.0" spacing="10.0">
+<children>
+<Text layoutX="43.3271484375" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Y" />
+<ProgressBar id="pgGyY" fx:id="pgGyY" layoutX="104.0" layoutY="65.0" prefWidth="200.0" progress="0.0" />
+<Text strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+</children>
+</HBox>
+<HBox alignment="CENTER" layoutX="54.0" layoutY="357.0" prefHeight="20.0" prefWidth="331.0" spacing="10.0">
+<children>
+<Text layoutX="43.3271484375" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Z" />
+<ProgressBar id="pgGyZ" fx:id="pgGyZ" layoutX="104.0" layoutY="65.0" prefWidth="200.0" progress="0.0" />
+<Text strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+</children>
+</HBox>
+</children>
+</VBox><VBox alignment="CENTER" layoutX="369.0" layoutY="338.0" prefHeight="140.0" prefWidth="317.0" spacing="10.0">
+<children>
+<Text layoutX="142.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Magnetic field" />
+<HBox alignment="CENTER" layoutX="54.0" layoutY="192.0" prefHeight="20.0" prefWidth="331.0" spacing="10.0">
+<children>
+<Text layoutX="43.3271484375" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" />
+<ProgressBar id="pgMfX" layoutX="104.0" layoutY="65.0" prefWidth="200.0" progress="0.0" />
+<Text strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+</children>
+</HBox>
+<HBox alignment="CENTER" layoutX="54.0" layoutY="233.0" prefHeight="20.0" prefWidth="331.0" spacing="10.0">
+<children>
+<Text layoutX="43.3271484375" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Y" />
+<ProgressBar id="pgMfY" layoutX="104.0" layoutY="65.0" prefWidth="200.0" progress="0.0" />
+<Text strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+</children>
+</HBox>
+<HBox alignment="CENTER" layoutX="54.0" layoutY="357.0" prefHeight="20.0" prefWidth="331.0" spacing="10.0">
+<children>
+<Text layoutX="43.3271484375" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Z" />
+<ProgressBar id="pgMfZ" layoutX="104.0" layoutY="65.0" prefWidth="200.0" progress="0.0" />
+<Text strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+</children>
+</HBox>
+</children>
+</VBox><VBox alignment="CENTER" layoutX="37.0" layoutY="426.0" prefHeight="160.0" prefWidth="272.0" spacing="10.0">
+<children><Text strokeType="OUTSIDE" strokeWidth="0.0" text="Debug" /><TextArea id="taDbg" prefHeight="156.0" prefWidth="290.0" />
+</children></VBox>
+</children></TilePane>
+</children>
+</AnchorPane>
